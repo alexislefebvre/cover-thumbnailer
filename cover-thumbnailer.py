@@ -693,7 +693,7 @@ if __name__ == "__main__":
             thumbnail.save_thumb(OUTPUT_FILE, "PNG")
 
     #Picture folders
-    elif CONF['pictures_enabled'] and match_path(INPUT_FOLDER, CONF['pictures_paths']):
+    elif CONF['pictures_enabled']:
         picture_list = search_cover(INPUT_FOLDER)
         if len(picture_list) == 0:
             picture_list = search_pictures(INPUT_FOLDER)
